@@ -1,0 +1,69 @@
+.navbar-brand{
+    display: flex;
+    font-size: 18px;
+  }
+  .form-inline{
+    display: flex;
+  }
+  .nav-link{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 18px;
+    margin-right: px;
+    font-size: 18px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  /* html{
+    background-image: url("https://www.venops.com/wp-content/uploads/bb-plugin/cache/open_payments_ftd-square.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    transition: 5s;
+  } */
+  
+  .column {
+    float: left;
+    width: 33%;
+    padding: 30px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .content{
+    font-size: 18px;
+    text-align: justify;
+    justify-content: space-evenly;
+    line-height: 20pt;
+    letter-spacing: 0.2px;
+
+  }
+  .colour{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    align-items: center;
+  } 
+  .card{
+    border: none;
+  }
+  li{
+    margin-bottom: 5px;
+  }
+  .content ul{
+    margin-bottom: 25px;
+  }
+  p{
+    line-height: 20pt;
+    letter-spacing: 0.2px;
+  }
+  .btn{
+    text-align: center;
+    
+  }
+  .container{
+    width:190%;
+  }

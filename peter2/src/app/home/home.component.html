@@ -1,0 +1,96 @@
+<div class="img">
+  
+   <a class="text" routerLink="/main">Awareness On Health Issues</a>
+  <div class="list">
+  <ul><li class="f"><form class="form-inline my-2 my-lg-0" >
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" #comp_name="ngModel" ngModel name="comp_name" [(ngModel)]="User.comp_name">
+     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  (click)="Read()" >Search</button> 
+  </form></li></ul>
+    
+</div>
+</div>
+<div class="navbars">
+  <nav>
+    
+    <ul>
+      <li>
+        <a class="nav-link" routerLink="/contact"><i class="fa-solid fa-phone"></i> Contact Us</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fa-solid fa-address-book"></i> About Us</a>
+      </li>
+      <li><a (click)="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign out</a>
+      </li>
+      <li><a class="dropdown-item" routerLink="/edit" routerLinkActive="active"><i class="fa-regular fa-pen-to-square"></i> Edit Profile</a></li> 
+           <li><a class="dropdown-item" routerLink="/getall" routerLinkActive="active"><i class="fa-brands fa-get-pocket"></i> Get All</a></li> 
+           <li><p class="user">{{username}}</p></li>
+           
+    </ul>
+    
+    <!-- <div class="d-flex flex-row">
+      <div class="dropdown">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="mainDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{username}}
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="mainDropdown">
+           
+
+        </ul>
+      </div>
+      </div> -->
+  </nav>
+</div>
+<!-- <nav class="navbar navbar-expand-lg navbar-light py-3 bg-dark text-white" style="background-image: linear-gradient(to right, #7ac8ff 100%, #26e0ea 10%); color:white">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav navbar-right">
+           <li class="nav-item">
+            <a class="nav-link" routerLink="/edit" routerLinkActive="active">Edit Profile</a>
+          </li> 
+          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact"><i class="fa-solid fa-phone"></i> Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active"><i class="fa-solid fa-address-book"></i> About Us</a>
+          </li>
+        
+
+        <div class="d-flex flex-row">
+        <div class="dropdown">
+          <button class="btn btn-outline-primary dropdown-toggle" type="button" id="mainDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{username}}
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="mainDropdown">
+             <li><a class="dropdown-item" routerLink="/edit" routerLinkActive="active"><i class="fa-regular fa-pen-to-square"></i> Edit Profile</a></li> 
+             <li><a class="dropdown-item" routerLink="/getall" routerLinkActive="active">Get All</a></li> 
+
+          </ul>
+        </div>
+        </div>
+        <button type="submit" value="Sign Out" class="btn btn-danger my-2 my-sm-0 navbar-right" (click)="logout()">Sign out</button>
+
+
+        </ul>
+      </div>
+    </div>
+
+  </nav> -->
+  <div class="alert alert-danger my-2" *ngIf="!(ErrorMsg =='')">{{ErrorMsg}}</div>
+
+
+<router-outlet></router-outlet>
+<!-- <p>welcome {{username}}</p> -->
+<router-outlet></router-outlet>
+<!-- <footer class="foot">
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <a routerLink="/main" routerLinkActive="active">Home</a>
+        </div>
+    </div>
+</div>
+</footer> -->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Prediction</title>
+</head>
+<body>
+    <h1>Model Prediction</h1>
+    <form action="/predict" method="post">
+        <table>
+            <tbody>
+                {% for col in column_names %}
+                <tr>
+                    <td>{{ col }}</td>
+                    <td><input type="checkbox" name="{{ col }}"></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction is defined %}
+    <div>
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
